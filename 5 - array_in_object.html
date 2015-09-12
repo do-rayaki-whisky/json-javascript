@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JSON Dotted and quoted</title>
+    </head>
+    <body>
+       
+		<script type="text/javascript">
+
+			var myObject1 = { maker:"Ford", cartype:"car", price:35000 };
+			var myObject2 = { maker:"Honda", cartype:"car", price:30000 };
+			var myObject3 = { maker:"Toyota", cartype:"van", price:50000 };
+
+			var myCar = { car1:myObject1 , car2:myObject2, car3:myObject3 };
+
+			var carColor = ["red", "blue", "green"];
+			var carDoors = [2, 4, 5];
+
+			var carComplete = { carOption1:carColor, carOption2:carDoors };
+
+			console.log(carComplete);
+			console.log(carComplete.carOption1[0]);
+			console.log(carComplete.carOption1[1]);
+			console.log(carComplete.carOption1[2]);
+
+		</script>
+
+    </body>
+</html>
