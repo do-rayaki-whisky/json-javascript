@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JSON Object Update values</title>
+    </head>
+    <body>
+       
+		<script type="text/javascript">
+
+			var myObject1 = { maker:"Ford", cartype:"car", price:35000 };
+			var myObject2 = { maker:"Honda", cartype:"car", price:30000 };
+			var myObject3 = { maker:"Toyota", cartype:"van", price:50000 };
+
+			var myCar = { car1:myObject1 , car2:myObject2, car3:myObject3 };
+
+			console.log(myCar);
+			console.log(myCar.car1.maker);
+
+			myObject1.maker = "GM";
+
+			console.log(myCar.car1.maker);
+
+			myCar.car1.maker = "Ferrari";
+
+			console.log(myCar.car1.maker);
+
+			console.log(myCar);
+
+		</script>
+
+    </body>
+</html>
